@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# Google Forms Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um clone do Google Forms desenvolvido com React, TypeScript, Vite e Tailwind CSS. Ele permite a criação e submissão de formulários dinâmicos com diversos tipos de campos.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** - Biblioteca para construção da interface do usuário.
+- **TypeScript** - Superset do JavaScript para tipagem estática.
+- **Vite** - Ferramenta de build rápida para projetos frontend.
+- **Tailwind CSS** - Framework CSS para estilização rápida e responsiva.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Criar formulários dinâmicos com diversos tipos de perguntas (texto, múltipla escolha, checkbox, etc.).
+- Reordenar, editar e excluir perguntas.
+- Visualização em tempo real do formulário.
+- Submissão de respostas e armazenamento local (ou em backend, se configurado).
 
-- Configure the top-level `parserOptions` property like this:
+## Instalação e Execução
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/ssergiofeitosa/Google-Form-Clone-React.git
+   cd google-forms-clone
+   ```
+
+2. Instale as dependências:
+   ```sh
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. Inicie o projeto:
+   ```sh
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+4. Abra no navegador:
+   ```
+   http://localhost:5173
+   ```
+
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contribuição
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Se desejar contribuir:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Fork este repositório.
+2. Crie uma branch com sua funcionalidade (`git checkout -b feature/minha-feature`).
+3. Commit suas modificações (`git commit -m 'Adiciona nova funcionalidade'`).
+4. Envie para o repositório (`git push origin feature/minha-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+
