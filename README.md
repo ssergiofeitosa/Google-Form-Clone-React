@@ -3,6 +3,7 @@
 # Google Forms Clone
 
 Se trata de um clone do Google Forms desenvolvido com React, TypeScript, Vite e Tailwind CSS. Ele permite a criação e submissão de formulários dinâmicos com diversos tipos de campos.
+![image](https://github.com/user-attachments/assets/0624fdf7-8fbb-42f8-982f-075fec5179e5)
 
 ## Tecnologias Utilizadas
 
